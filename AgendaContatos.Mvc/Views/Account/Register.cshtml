@@ -12,26 +12,26 @@
 
     </div>
 
-    <form>
+    <form method="post" action="/Account/Register">
 
         <div class="mb-3">
             <label>Entre com seu nome:</label>
-            <input type="text" class="form-control"/>
+            <input type="text" class="form-control" name="nome"/>
         </div>
 
         <div class="mb-3">
             <label>Entre com seu e-mail:</label>
-            <input type="text" class="form-control"/>
+            <input type="text" class="form-control" name="email"/>
         </div>
 
         <div class="mb-3">
             <label>Entre com sua senha:</label>
-            <input type="password" class="form-control"/>
+            <input type="password" class="form-control" name="senha"/>
         </div>
 
         <div class="mb-3">
             <label>Confirme a sua senha:</label>
-            <input type="password" class="form-control"/>
+            <input type="password" class="form-control" name="senhaConfirmacao"/>
         </div>
 
         <div class="mb-3 d-grid">
@@ -45,5 +45,7 @@
         </div>
 
     </form>
-
+    <div class="Text-center">
+        <strong>@TempData["Mensagem"]</strong>
+    </div>
 </div>
